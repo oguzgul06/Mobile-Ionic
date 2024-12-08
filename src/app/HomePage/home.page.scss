@@ -1,0 +1,61 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Header ve Toolbar Özelleştirme */
+ion-header {
+    ion-toolbar {
+        --background: linear-gradient(45deg, #ff6f61, #ff9478);
+        /* Arka plan rengi */
+        --color: white;
+        /* Yazı rengi */
+        font-weight: bold;
+    }
+
+    ion-buttons ion-button {
+        color: white;
+        /* Çıkış butonu yazı rengi */
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+    }
+
+    ion-buttons ion-button:hover {
+        background: rgba(255, 255, 255, 0.2);
+        /* Hover arka plan efekti */
+    }
+}
+
+/* Liste ve Liste Öğeleri Özelleştirme */
+ion-content {
+    ion-list {
+        --background: #f8f9fa;
+        /* Listenin arka plan rengi */
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    ion-item {
+        --background: white;
+        transition: all 0.3s ease-in-out;
+        /* Geçiş efekti */
+
+        /* Liste öğesi hover efekti */
+        &:hover {
+            --background: #e6f7ff;
+            /* Üzerine gelince arka plan rengi */
+            transform: scale(1.02);
+            /* Hafif büyüme efekti */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            /* Hafif gölge efekti */
+        }
+    }
+
+    ion-item ion-label {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+    }
+}

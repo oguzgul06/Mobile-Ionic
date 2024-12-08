@@ -1,0 +1,13 @@
+<ion-content>
+  <div class="login-container">
+    <ion-item>
+      <ion-label position="floating">Kullanıcı Adı</ion-label>
+      <ion-input [(ngModel)]="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Şifre</ion-label>
+      <ion-input [(ngModel)]="password" type="password"></ion-input>
+    </ion-item>
+    <ion-button expand="full" (click)="login()">Giriş Yap</ion-button>
+  </div>
+</ion-content>
